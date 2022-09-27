@@ -1,0 +1,161 @@
+/* General
+-----------------------------------------------------------------------------------------------*/
+
+body{
+	background-color:#fff;
+	color:#666;
+}
+	
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6{ color:#444; }
+	
+a, 
+a:visited{ color:#C1392B; }
+
+.slidetext h2, 
+.slidetext h3,
+.rs-slidetext-title{ border-left:3px solid #C1392B !important; }
+
+/* header-top 
+-----------------------------------------------------------------------------------------------*/
+
+.contact-number{ background-color:#C1392B; color:#fff; }
+
+/* styling of LEVEL 1 menu item that is current */ 
+ul#dropdown-menu li.current > a{ color:#C1392B;  }
+
+/* level 2 menu */
+ul#dropdown-menu ul{ border-top:3px solid #C1392B; }
+
+
+.slidetext h2, 
+.slidetext h3{
+	color: #ffffff;
+	border-left:3px solid #C1392B !important;
+}
+
+/* Box 
+-----------------------------------------------------------------------------------------------*/
+
+.box{ border-top:1px solid #e9e9e9; border-bottom:1px solid #e9e9e9; background-color:#efefef; }
+
+/* Headline Titles 
+-----------------------------------------------------------------------------------------------*/
+
+.headline span{background-color:#FFFFFF;}
+.headline h5{ color:#7BAABE; }
+
+/* Page Header
+-----------------------------------------------------------------------------------------------*/
+
+#page-header{ background-color:#efefef; border-bottom:1px solid #e9e9e9; border-top:1px solid #e9e9e9; }
+/* Side Nav
+-----------------------------------------------------------------------------------------------*/
+
+.side-nav{ border-top:1px solid #efefef; }
+.side-nav li{ border-bottom:1px solid #efefef; }
+.side-nav li a{ background: url(../images/bg-side-nav.png) no-repeat center left; }
+.side-nav li:last-child{ border-color:#efefef; }
+.side-nav li.current a{ color:#303030; }
+
+/* Accordion
+-----------------------------------------------------------------------------------------------*/
+
+.accordion li.active>a{ background:url(../images/bg-accordeon2.png) no-repeat top left; }
+.accordion li>a{ background:url(../images/bg-accordeon.png) no-repeat top left; }	
+
+/* Tabs
+-----------------------------------------------------------------------------------------------*/
+
+.tabs-menu{ border-bottom:1px solid #e9e9e9; }
+.tabs-menu li.active a{  border:1px solid #efefef; border-bottom-color:#fff; border-top:1px solid #ccc; color:#666; }
+.tabs-content{ border:1px solid #e9e9e9; }
+
+
+/* Footer
+-----------------------------------------------------------------------------------------------*/
+
+#footer{ background-color:#444; color:#999; }
+			
+#footer a{ color:#999; }
+#footer a:hover{ color:#fff; text-decoration:none; }
+#footer h5{ color:#fff; }
+
+/* Footer nav
+-----------------------------------------------------------------------------------------------*/
+
+.footer-nav i{ color:#666; }
+.footer-nav li{ border-top:1px solid #4f4f4f; }
+
+
+/* Subscribe
+-----------------------------------------------------------------------------------------------*/
+
+#subscribe-input{ color:#666; border:none; }
+#subscribe-input:focus{ color:#333; }
+#subscribe .subscribe-submit-btn{background-color:#C1392B; }	
+
+/* Footer bottom
+-----------------------------------------------------------------------------------------------*/
+
+#footer-bottom{ background-color:#353535; padding:25px 0; margin-top:50px; }
+
+
+/* News
+-----------------------------------------------------------------------------------------------*/
+
+.news h3{ background-color:#C1392B; color:#fff; }
+.news ul{ background-color:#ebebeb; }
+.news ul li .news-item{ border-left:1px solid #ccc; }
+
+/* Team members
+-----------------------------------------------------------------------------------------------*/
+
+.team-member-social a i{ color:#fff; }
+.team-member-social a:hover i{ color:#fff; }
+
+/* Services Overview 
+-----------------------------------------------------------------------------------------------*/
+
+.service-overview{ background-color:#C1392B; }
+.service-overview i{ color:#fff; }
+.service-overview-text{ background-color:#fff; border:1px solid #e4e4e4; }
+.service-overview-text h5 a{ color:#353535; }
+
+/* Features
+-----------------------------------------------------------------------------------------------*/
+
+.feature{ background-color:#fff; }
+.feature h3{ border-bottom:1px solid #efefef; }
+
+/* Steps
+-----------------------------------------------------------------------------------------------*/
+
+.step i{ background-color:#C1392B; color:#fff; }
+
+/* Call us
+-----------------------------------------------------------------------------------------------*/
+
+.call-us{ background:#C1392B url(../../_content/services/bg-call.png) no-repeat top right; color:#fff; }
+
+/* Portfolio item
+-----------------------------------------------------------------------------------------------*/
+
+.portfolio-item-description{ border-bottom:1px solid #efefef; }
+.portfolio-item-overlay{ background-color:rgba(0,0,0,0.5); }
+.portfolio-item-overlay a{ background:url(../images/bg-zoom.png) no-repeat center center; }
+
+/* Portfolio / Blog Pagination
+-----------------------------------------------------------------------------------------------*/
+
+.pagination a{ border:1px solid #e9e9e9; border-left:none; }
+.pagination li:first-child a{ border-left:1px solid #e9e9e9; }
+
+.pagination li.current a{ color:#666; background-color:#f3f3f3; }	
+.pagination li.current a:hover{ text-decoration:none;}	
+
+
