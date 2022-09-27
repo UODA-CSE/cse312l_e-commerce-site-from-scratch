@@ -12,6 +12,9 @@
   Fahmida Yesmin,
   Associate Professor, CSE, UODA
 
+<h3 align="center">
+Class Date : 27 September 2022
+</h3>
 ## Objective
 
 This the first tutorial for creating a simple e-commerce site with all basic features from the scratch. In this tutorial, we will learn how to design the database, the structure of the files and folder, and the designing index page of a ecommerce site that will sell furniture online.

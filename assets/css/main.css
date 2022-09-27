@@ -1475,7 +1475,7 @@ a {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
-  display: inline-block;
+  display: block;
   float: right;
   margin: 0px;
   padding: 12px 19px 13px;
@@ -1731,9 +1731,10 @@ a {
   .menu-label.hot-menu:before {
   border-color: #ff7878 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
 }
-.header-style-2 {
-  /*margin-bottom:10px;*/
-}
+/* .header-style-2 { */
+/*margin-bottom:10px;*/
+/* } */
+
 .header-style-2 .header-nav {
   background: rgba(0, 0, 0, 0) !important;
 }
@@ -1826,6 +1827,7 @@ a {
 .yamm .dropdown-menu {
   left: auto;
   top: 110%;
+  box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   border: 1px solid #f1f1f1;
@@ -3358,6 +3360,7 @@ a {
   transition: all 0.3s ease;
 }
 .wide-banner:hover img {
+  transform: scale(1.1);
   -webkit-transform: rotate(-1deg) scale(1.1);
   -moz-transform: rotate(-1deg) scale(1.1);
   -ms-transform: rotate(-1deg) scale(1.1);
@@ -5543,7 +5546,7 @@ a {
   color: #666666;
   font-size: 13px;
   padding-right: 4px;
-  ont-family: FontAwesome;
+  font-family: FontAwesome;
 }
 .blog-page .blog-post .author:before,
 .blog-page
@@ -5812,7 +5815,7 @@ a {
   color: #666;
 }
 .contact-page .contact-info .contact-i {
-  display: inline-block;
+  display: block;
   height: 30px;
   width: 30px;
   text-align: center;
@@ -5853,7 +5856,7 @@ a {
 }
 .shopping-cart .shopping-cart-table table tbody tr .romove-item a:hover,
 .shopping-cart .shopping-cart-table table tbody tr .romove-item a:focus {
-  color: #ff000 !important;
+  color: #fff000 !important;
 }
 .shopping-cart
   .shopping-cart-table
