@@ -21,8 +21,7 @@ if (isset($_Get['action'])) {
                         <h2>
                             <div class="item">
                                 <a href="index.php" class="image">
-                                    <img data-echo="brandsimage/logo.png" src="brandsimage/logo-01.png"
-                                        style="height: 92px">
+                                    <img src="brandsimage/logo.png" style="height: 92px">
 
                                 </a>
                         </h2>

@@ -67,6 +67,12 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
                         <div id="hero" class="homepage-slider3">
                             <div id="owl-main" class="owl-carousel owl-inner-nav owl-ui-sm">
                                 <div class="full-width-slider">
+                                    <div class="item"
+                                        style="background-image: url(assets/images/sliders/slider5.jpeg);">
+                                        <!-- /.container-fluid -->
+                                    </div><!-- /.item -->
+                                </div><!-- /.full-width-slider -->
+                                <div class="full-width-slider">
                                     <div class="item" style="background-image: url(assets/images/sliders/slider1.png);">
                                         <!-- /.container-fluid -->
                                     </div><!-- /.item -->
