@@ -1,6 +1,6 @@
 <?php
 session_start();
-error_reporting(0);
+// error_reporting(0);
 include('includes/config.php');
 if (isset($_GET['action']) && $_GET['action'] == "add") {
     $id = intval($_GET['id']);
@@ -42,6 +42,7 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
     <link rel="stylesheet" href="assets/css/rateit.css">
     <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="assets/css/config.css">
+    <link rel="stylesheet" href="assets/css/yamm.css">
     <link href="assets/css/green.css" rel="alternate stylesheet" title="Green color">
     <link href="assets/css/blue.css" rel="alternate stylesheet" title="Blue color">
     <link href="assets/css/red.css" rel="alternate stylesheet" title="Red color">
