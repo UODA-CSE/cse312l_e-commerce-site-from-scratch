@@ -40,6 +40,17 @@ if (isset($_POST['ordersubmit'])) {
         }
     }
 }
+
+// Delete Product from Cart
+
+if (isset($_POST['deleteItem'])) {
+    if (!empty($_SESSION['cart'])) {
+        foreach ($_POST['deleteItem'] as $key) {
+            unset($_SESSION['cart'][$key]);
+        }
+        $message = 'Your Cart has been Updated';
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -134,11 +145,20 @@ if (isset($_POST['ordersubmit'])) {
                                             <td colspan="7">
                                                 <div class="shopping-cart-btn">
                                                     <span class="">
+                                                        <!-- White text btn -->
                                                         <a href="index.php"
-                                                            class="btn btn-upper btn-primary outer-left-xs">Continue
+                                                            class="btn btn-upper btn-primary btn text-right outer-right-xs">Continue
                                                             Shopping</a>
+                                                        <!-- Delete a product -->
+
+
+
                                                         <input type="submit" name="submit" value="Update shopping cart"
-                                                            class="btn btn-upper btn-primary pull-right outer-right-xs">
+                                                            class="btn btn-upper btn-primary pull-right outer-right-xs"
+                                                            style="margin-left: 15px">
+                                                        <input type="submit" name="deleteItem" value="Delete item(s)"
+                                                            class="btn btn-upper btn-danger pull-right outer-right-xs">
+
                                                     </span>
 
                                                 </div><!-- /.shopping-cart-btn -->
