@@ -90,6 +90,16 @@ if (isset($_POST['deleteItem'])) {
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
+    <script>
+    /* -------------------  */
+    // Select all checkboxes
+    function toggle(source) {
+        checkboxes = document.getElementsByName('remove_code[]');
+        for (var i = 0, n = checkboxes.length; i < n; i++) {
+            checkboxes[i].checked = source.checked;
+        }
+    }
+    </script>
 </head>
 
 <body class="cnt-home">
@@ -124,13 +134,16 @@ if (isset($_POST['deleteItem'])) {
                         <div class="table-responsive">
                             <form name="cart" method="post">
                                 <?php
-
                                 if (!empty($_SESSION['cart'])) {
                                 ?>
                                 <table class="table table-bordered">
-                                    <thead>
+                                    <thead class="">
                                         <tr>
-                                            <th class="cart-romove item">Remove</th>
+                                            <th class="cart-romove item">
+                                                <!-- check all -->
+                                                <input type="checkbox" name="select_all" id="select_all"
+                                                    onclick="toggle(this)" />
+                                            </th>
                                             <th class="cart-description item">Image</th>
                                             <th class="cart-product-name item">Product Name</th>
                                             <th class="cart-qty item">Quantity</th>
@@ -150,14 +163,13 @@ if (isset($_POST['deleteItem'])) {
                                                             class="btn btn-upper btn-primary btn text-right outer-right-xs">Continue
                                                             Shopping</a>
                                                         <!-- Delete a product -->
-
-
-
                                                         <input type="submit" name="submit" value="Update shopping cart"
                                                             class="btn btn-upper btn-primary pull-right outer-right-xs"
                                                             style="margin-left: 15px">
-                                                        <input type="submit" name="deleteItem" value="Delete item(s)"
-                                                            class="btn btn-upper btn-danger pull-right outer-right-xs">
+                                                        <button type="submit" name="submit"
+                                                            class="btn btn-upper btn-danger btn text-right outer-right-xs"
+                                                            onclick="return confirm('Are you sure you want to delete?');">Delete
+                                                            Selected</button>
 
                                                     </span>
 
