@@ -13,7 +13,7 @@
   Associate Professor, CSE, UODA
 
 <h3 align="center">
-📅 Class Date : 27 September 2022
+📅 Class Date : 7 November 2022 [Last class of frontend]
 </h3>
 
 ## Objective

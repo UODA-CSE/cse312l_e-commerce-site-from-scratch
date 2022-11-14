@@ -92,7 +92,7 @@ if (isset($_POST['deleteItem'])) {
     <script src="assets/js/respond.min.js"></script>
     <script>
     /* -------------------  */
-    // Select all checkboxes
+    // Todo: Select all checkboxes
     function toggle(source) {
         checkboxes = document.getElementsByName('remove_code[]');
         for (var i = 0, n = checkboxes.length; i < n; i++) {
@@ -140,7 +140,7 @@ if (isset($_POST['deleteItem'])) {
                                     <thead class="">
                                         <tr>
                                             <th class="cart-romove item">
-                                                <!-- check all -->
+                                                <!-- TODO: check all -->
                                                 <input type="checkbox" name="select_all" id="select_all"
                                                     onclick="toggle(this)" />
                                             </th>
