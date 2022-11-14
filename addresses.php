@@ -59,16 +59,17 @@ if (strlen($_SESSION['login']) == 0) {
     <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <script>
-    // Checkbox fuunction to make shipping address and billing address same
-    function sameAddress() {
-        // onclick make same
-        if (document.getElementById('same').checked) {
+    //  function to make shipping address and billing address same
+    function copyBillingAddress() {
+        if (document.getElementById('sameAddress').checked) {
+
+            var text = document.getElementById("text");
+            text.style.display = "block";
             document.getElementById('shippingaddress').value = document.getElementById('billingaddress').value;
             document.getElementById('shippingstate').value = document.getElementById('bilingstate').value;
             document.getElementById('shippingcity').value = document.getElementById('billingcity').value;
             document.getElementById('shippingpincode').value = document.getElementById('billingpincode').value;
         } else {
-            // onclick make blank
             document.getElementById('shippingaddress').value = "";
             document.getElementById('shippingstate').value = "";
             document.getElementById('shippingcity').value = "";
@@ -130,7 +131,7 @@ if (strlen($_SESSION['login']) == 0) {
                                                             Address<span>*</span></label>
                                                         <textarea
                                                             class="form-control unicase-form-control text-input" " name="
-                                                            billingaddress"
+                                                            billingaddress" id="billingaddress"
                                                             required="required"><?php echo $row['billingAddress']; ?></textarea>
                                                     </div>
                                                     <div class="form-group">
@@ -187,7 +188,7 @@ if (strlen($_SESSION['login']) == 0) {
                                                 <label class="info-title" for="Shipping Address">Shipping
                                                     Address<span>*</span></label>
                                                 <textarea class="form-control unicase-form-control text-input" " name="
-                                                    shippingaddress"
+                                                    shippingaddress" id="shippingaddress"
                                                     required="required"><?php echo $row['shippingAddress']; ?></textarea>
                                             </div>
                                             <div class="form-group">
@@ -213,6 +214,15 @@ if (strlen($_SESSION['login']) == 0) {
                                             </div>
                                             <button type="submit" name="shipupdate"
                                                 class="btn-upper btn btn-primary checkout-page-button">Update</button>
+
+                                            <!-- same Addresss checkbox  -->
+                                            <input type="checkbox" id="sameAddress" onclick="copyBillingAddress()"> Same
+                                            as Billing Address
+
+                                            <p id="text" style="display:none" class="text-primary m-t-20">Address
+                                                updated
+                                            </p>
+
                                             <!-- onclick make shipping address same -->
 
 
